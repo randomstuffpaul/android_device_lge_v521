@@ -1021,6 +1021,10 @@ typedef struct
   int              pin1_replaced;   /* applicable to USIM, CSIM & ISIM */
   RIL_PinState     pin1;
   RIL_PinState     pin2;
+  int              remaining_count_pin1;
+  int              remaining_count_puk1;
+  int              remaining_count_pin2;
+  int              remaining_count_puk2;
 } RIL_AppStatus;
 
 /* Deprecated, use RIL_CardStatus_v6 */
@@ -1261,6 +1265,8 @@ typedef struct {
 
 typedef struct {
     RIL_GW_SignalStrength       GW_SignalStrength;
+    int                         lge1; // Padding, do not use
+    int                         lge2; // Padding, do not use
     RIL_CDMA_SignalStrength     CDMA_SignalStrength;
     RIL_EVDO_SignalStrength     EVDO_SignalStrength;
     RIL_LTE_SignalStrength_v8   LTE_SignalStrength;
