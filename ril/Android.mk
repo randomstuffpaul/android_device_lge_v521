@@ -1,0 +1,9 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libuicc
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SHARED_LIBRARIES := liblog
+
+include $(BUILD_SHARED_LIBRARY)
