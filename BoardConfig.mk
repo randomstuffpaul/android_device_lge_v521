@@ -21,6 +21,8 @@ TARGET_OTA_ASSERT_DEVICE := v521,b3
 
 DEVICE_PATH := device/lge/v521
 
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 #FORCE_64_BIT := true
 
 # Platform
